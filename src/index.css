@@ -1,3 +1,33 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+
+
 body {
   margin: 0;
  
@@ -17,8 +47,13 @@ header{
 }
 .header__logo{
   position: absolute;
-  top:4rem;
+  top:2rem;
   left: 4rem;
+}
+
+.logo-box{
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
 }
 .header__text{
   position: absolute;
@@ -37,12 +72,19 @@ header{
   font-weight: 400;
   margin-bottom: 6rem;
   letter-spacing: 0.5rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
 
 }
 .heading__primary--sub{
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; 
 }
 
 .navigation__checkbox{
@@ -54,8 +96,8 @@ header{
   height: 5rem;
   width: 5rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 3rem;
+  right: 3rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -121,5 +163,53 @@ header{
 .btn--white {
   background-color: #fff;
   color: #777; }
-  .btn--white::after {
-    background-color: #fff; }
+.btn--white::after {
+  background-color: #fff; }
+
+.btn--animated {
+   animation: moveInButton 0.5s ease-out 0.75s;
+   animation-fill-mode: backwards;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+
+

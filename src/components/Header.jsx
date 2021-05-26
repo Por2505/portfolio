@@ -12,7 +12,7 @@ function Header(){
         </div>
         
             <div className="header__logo">
-                logo
+               <h1 className="logo-box">MyProfile</h1>
             </div>
             <div className="header__text">
                 <h1 className="heading__primary">
