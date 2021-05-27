@@ -2,7 +2,7 @@ import React from "react";
 import profile from '../img/vdo.mp4'
 
 function Header(){
-    return(<div>
+    return(
         <header>
         <div className="bg-video">
                     <video className="bg-video__content" autoplay muted loop>
@@ -23,7 +23,7 @@ function Header(){
             </div>
             
         </header>
-        </div>)
+        )
 
 }
 export default Header;

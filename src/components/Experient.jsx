@@ -3,7 +3,7 @@ import img from "../img/ex.jpg";
 
 function Experients(){
     return(
-        <section className="section-experient">
+        <section className="section-experient" id="experient">
             <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         My Experient

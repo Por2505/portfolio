@@ -7,10 +7,11 @@ function Footer(){
         <div className="col-1-of-2">
             <div className="footer__navigation">
                 <ul className="footer__list">
-                    <li className="footer__item"><a href="#" className="footer__link">AboutMe</a></li>
-                    <li className="footer__item"><a href="#" className="footer__link">My Skills</a></li>
-                    <li className="footer__item"><a href="#" className="footer__link">My Experient</a></li>
-                    <li className="footer__item"><a href="#" className="footer__link"> My Portfolio</a></li>
+                    <li className="footer__item"><a href="#aboutme" className="footer__link">AboutMe</a></li>
+                    <li className="footer__item"><a href="#skills" className="footer__link">My Skills</a></li>
+                    <li className="footer__item"><a href="#portfolio" className="footer__link"> My Portfolio</a></li>
+                    <li className="footer__item"><a href="#experient" className="footer__link">My Experient</a></li>
+                    
                     
                 </ul>
             </div>
