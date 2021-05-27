@@ -1,121 +1,36 @@
 import React from "react";
+import img from "../img/ex.jpg";
 
-function Experient(){
+function Experients(){
     return(
-    
-    <section className="section-experient">
+        <section className="section-experient">
             <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         My Experient
                     </h2>
                 </div>
                 <div className="row">
-                    <div className="col-1-of-3">
-                        <div className="card">
-                            <div className="card__side card__side--font">
-                                <div className="card__picture card__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--1">The sea explorer</span>
-                                </h4>
-                                <div className="card__details">
-                                    <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tours guide</li>
-                                        <li>Sleeping cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div className="card__side card__side--back card__side--back-1">
-                                <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-only">Only</p>
-                                        <p className="card__price-value">2500 ฿</p>
-                                    </div>
-                                    <a href="#popup" className="btn btn--white">Book now</a>
-                                </div>
-                            </div>
+                    <div className="story">
+                    <figure className="story__shape">
+                        <img src={img} className="story__img"/>
+                        <figcaption className="story__caption">Internship</figcaption>
+                    </figure>
+                    <div className="story__text">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Octagon Interactive co.th
+                        </h3>
                         
-                        </div>
-                    
-                    </div>
-
-
-                    <div className="col-1-of-3">
-                        <div className="card">
-                            <div className="card__side card__side--font">
-                                <div className="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--2">The Forest Hiker</span>
-                                </h4>
-                                <div className="card__details">
-                                    <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tours guide</li>
-                                        <li>Sleeping cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div className="card__side card__side--back card__side--back-2">
-                                <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-only">Only</p>
-                                        <p className="card__price-value">2500 ฿</p>
-                                    </div>
-                                    <a href="#popup" className="btn btn--white">Book now</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-
-                    </div>
-
-                    <div className="col-1-of-3">
-                        <div className="card">
-                            <div className="card__side card__side--font">
-                                <div className="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--3">The Snow Adventures</span>
-                                </h4>
-                                <div className="card__details">
-                                    <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tours guide</li>
-                                        <li>Sleeping cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div className="card__side card__side--back card__side--back-3">
-                                <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-only">Only</p>
-                                        <p className="card__price-value">2500 ฿</p>
-                                    </div>
-                                    <a href="#popup" className="btn btn--white">Book now</a>
-                                </div>
-                            </div>
+                        <p className="p-ex">Jan-May 2021</p>
+                        <p className="p-ex">Position: Software Developer</p>
+                        <p className="p-ex">Integrated HikVision for Smart Living System </p>
+                        <p className="p-ex">Integrated HDL for Home Automation System </p>
+                        <p className="p-ex">Update Website Octagon Interactive </p>
                         
                         </div>
                     </div>
                 </div>
-
-    </section>
-    
+        </section>
     )
 }
 
-export default Experient;
+export default Experients;

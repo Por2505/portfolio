@@ -1,16 +1,20 @@
 import React from "react";
-import Header from "./Header";
 import Navbar from "./Navbar";
+import Header from "./Header";
 import AbouMe from "./About-me";
 import Skill from "./Skill";
-import Experient from "./Experient";
+import Portfolio from "./Portfolio";
+import Experients from "./Experient";
+import Footer from "./Footer";
 function App(){
     return(<div>
-        <Navbar />
+        <Navbar/>
         <Header/>
         <AbouMe />
         <Skill />
-        <Experient />
+        <Portfolio />
+        <Experients />
+        <Footer/>
         </div>
     )
 }
