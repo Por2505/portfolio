@@ -17,7 +17,8 @@ function Experients(){
                     </figure>
                     <div className="story__text">
                         <h3 className="heading-tertiary u-margin-bottom-small">
-                            Octagon Interactive co.th
+                            
+                            Octagon Interactive
                         </h3>
                         
                         <p className="p-ex">Jan-May 2021</p>

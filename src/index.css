@@ -53,7 +53,7 @@
       text-transform: uppercase; }
     
     .paragraph {
-      font-size: 1rem; 
+      font-size: 1.2rem; 
       color: white;
     }
       .paragraph:not(:last-child) {
@@ -87,6 +87,19 @@
 .p-ex{
   font-size:1.2rem;
 }
+.p-small{
+  font-size:1rem;
+}
+
+.icon {
+  color: #0ccaec;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #0307d8;
+}
+
 
 body {
   margin: 0;
@@ -442,10 +455,10 @@ header{
           perspective: 200rem;
           -moz-perspective: 200rem;
           position: relative;
-          height: 52rem; }
+          height: 40rem; }
           .card__side {
             font-size: 2rem;
-            height: 52rem;
+            height: 45rem;
             transition: all .8s ease;
             position: absolute;
             top: 0;
@@ -511,7 +524,8 @@ header{
               margin: 0 auto; }
               .card__details ul li {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                color:#777;
                 padding: 1rem; }
                 .card__details ul li:not(:last-child) {
                   border-bottom: 1px solid #eee; }
@@ -523,12 +537,16 @@ header{
             width: 90%;
             text-align: center; }
           .card__price-box {
+            
             text-align: center;
             color: #fff;
             margin-bottom: 8rem; }
           .card__price-only {
             font-size: 1.4rem;
             transform: uppercase; }
+          .card__pic{
+            width:95%;
+          }
           .card__price-value {
             font-size: 6rem;
             font-weight: 100; }
@@ -574,9 +592,8 @@ header{
       transform: skewX(-12deg); }
       @media only screen and (max-width: 56.25em) {
         .story {
-          width: 100%;
-          padding: 6rem;
-          padding-left: 7rem; } }
+          transform: skewX(0);
+           } }
       @media only screen and (max-width: 37.5em) {
         .story {
           transform: skewX(0); } }
@@ -595,8 +612,10 @@ header{
             clip-path: circle(50% at 50% 50%);
             -webkit-shape-outside: circle(50% at 50% 50%);
             shape-outside: circle(50% at 50% 50%);
-            border-radius: none; } }
-        @media only screen and (max-width: 37.5em) {
+            border-radius: none; 
+          } }
+          
+        @media only screen and (max-width: 56.25em) {
           .story__shape {
             transform: translateX(-3rem) skewX(0); } }
       .story__img {
@@ -608,7 +627,7 @@ header{
         font-family: "Lato", sans-serif;
         color: #202020;
         transform: skewX(12deg); }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 56.25em) {
           .story__text {
             transform: skewX(0); } }
       .story__caption {
@@ -653,7 +672,12 @@ header{
                 margin-bottom: 0; } }
           .feature-box:hover {
             transform: translateY(-2rem) scale(1.03); }
+          
 
+          .feature-box__text{
+            font-size:1.2rem;
+            color:#333;
+          }
 
             .footer {
               background-color: #101010;
