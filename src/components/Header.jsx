@@ -1,5 +1,6 @@
 import React from "react";
-import profile from '../img/vdo.mp4'
+import profile from '../img/vdo.mp4';
+import file from '../img/por_portfolio.pdf';
 
 function Header(){
     return(
@@ -18,7 +19,7 @@ function Header(){
                 <h1 className="heading__primary">
                     <p className="heading__primary--sub"> Hi There &#128075; , I'm </p> 
                     <p className="heading__primary--main">Sarawadee Noktawee</p>
-                    <button className="btn btn--white btn--animated">Download CV</button>
+                    <a href={file} download><button className="btn btn--white btn--animated"> Download CV</button></a>
                </h1>
             </div>
             

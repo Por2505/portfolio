@@ -12,8 +12,9 @@ function AboutMe(){
 
                 <div className="row">
                     <div className="col-1-of-2">
+
                    
-                    <p className="paragraph">Extremely motivated to constantly develop my skills and
+                    <p className="paragraph" >Extremely motivated to constantly develop my skills and
                     develop knowledge in work. I am ready to learn new things.
                     I would like to get the opportunity to learn and develop my
                     skills better.

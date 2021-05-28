@@ -191,7 +191,8 @@ header{
 
 }
 .heading__primary--sub{
-  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
   animation-name: moveInLeft;
@@ -290,7 +291,7 @@ header{
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(90); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -299,6 +300,12 @@ header{
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.2em) {
+    .navigation__icon{
+      margin-top:3rem } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__icon{
+      margin-top: 3rem } }
 
   
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
@@ -356,22 +363,58 @@ header{
       padding: 10rem;
        }
   }
+  @media only screen and (max-width:37.5em){
+    .aboutme{
+      padding: 4rem;
+       }
+  }
  
 
 .section-skill {
     padding: 20rem 10rem;
     background-color: #181818;
   }
+  @media only screen and (max-width:56.25em){
+    .section-skill{
+      padding: 10rem;
+       }
+  }
+  @media only screen and (max-width:37.5em){
+    .section-skill{
+      padding: 4rem;
+       }
+  }
+ 
 
 .section-portfolio{
   padding: 20rem 10rem;
   background-color: #181818;
 }
+
+@media only screen and (max-width:56.25em){
+  .section-portfolio{
+    padding: 10rem;
+     }
+}
+@media only screen and (max-width:37.5em){
+  .section-portfolio{
+    padding: 4rem;
+     }
+}
 .section-experient{
   padding: 20rem 10rem;
   background-color: #181818;
 }
-
+@media only screen and (max-width:56.25em){
+  .section-experient{
+    padding: 10rem;
+     }
+}
+@media only screen and (max-width:37.5em){
+  .section-experient{
+    padding: 2rem;
+     }
+}
 
 
 .btn, .btn:link, .btn:visited {
@@ -385,6 +428,10 @@ header{
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  .btn:visited{
+    text-decoration: none;
+  }
+
 
 .btn:hover {
   transform: translateY(-3px);
@@ -642,7 +689,7 @@ header{
       box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 3px;
-      padding: 4rem;
+      padding: 2rem;
       padding-left: 9rem;
       font-size: 1.6rem;
       transform: skewX(-12deg); }
@@ -824,7 +871,7 @@ header{
                         width: 60%;
                         display: table-cell;
                         vertical-align: middle;
-                        padding: 3rem 5rem; }
+                        padding: 5rem; }
                       .popup__img {
                         padding:1rem 5rem;
                         display: block;
@@ -856,7 +903,8 @@ header{
                         transition: all 0.2s;
                         line-height: 1; }
                       .popup__close:hover {
-                        color: #55c57a; }
+                          color: #0ccaec;
+                        }
 
 .img__popup{
   position:relative;
